@@ -30,4 +30,28 @@ public abstract class Project{
 //  Info = método abstrato que retorna uma String;
     public abstract String Info();
 
+    public int getHours() {
+        return Hours;
+    }
+
+    public double getLabourHour() {
+        return LabourHour;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setHours(int hours) {
+        Hours = hours;
+    }
+
+    public void setLabourHour(double labourHour) {
+        LabourHour = labourHour;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
 }

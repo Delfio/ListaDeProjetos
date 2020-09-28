@@ -23,6 +23,11 @@ public class HardwareProj extends Project {
         super(name, LabourHour);
     }
 
+    public HardwareProj(String name, double LabourHour, double ComponentsCost) {
+        super(name, LabourHour);
+        this.ComponentsCost = ComponentsCost;
+    }
+
     @Override
     public double CurrentCost() {
         return ((this.Hours * this.LabourHour) + this.ComponentsCost);
@@ -34,5 +39,13 @@ public class HardwareProj extends Project {
             + this.name + " ] = Custo Hora(" + this.LabourHour + ")" 
             + ", Horas Trabalhadas(" + this.Hours + ")" 
             + " e Custo Atual(" + this.CurrentCost() + ")";
+    }
+
+    public double getComponentsCost() {
+        return ComponentsCost;
+    }
+
+    public void setComponentsCost(double componentsCost) {
+        ComponentsCost = componentsCost;
     }
 }
