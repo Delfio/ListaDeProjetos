@@ -18,7 +18,7 @@ Hours= armazena a quantidade de horas totais trabalhadas no projeto.
 Construtor = método construtor da classe (executado para a criação do objeto), nele devem ser atribuídos o nome do projeto e o custo da hora do projeto;
 AddHours= método que registrará a hora passada como parâmetro na variável Horas pertencente a classe;
 CurrentCost= método abstrato que retorna um double*;
-Info = método abstrato que retorna uma String*;
+Info = método abstrato que retorna uma String;
 ```
 
 ### Segundo
